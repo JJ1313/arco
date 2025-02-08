@@ -1,0 +1,84 @@
+#section-hero {
+    height: 100dvh;
+    background-color: var(--clr-gray-200);
+
+    .content-container {
+        position: absolute;
+        bottom: 10rem;
+        left: 5rem;
+    }
+
+    button {
+        position: absolute;
+        right: 3.8rem;
+        top: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: var(--clr-white);
+        margin-top: 0.5rem;
+    }
+
+    .logo {
+        width: 14.3rem;
+        height: 4.1rem;
+    }
+}
+
+#section-intro {
+    h2 {
+        font-size: 3.25rem;
+    }
+
+    img {
+        max-height: 39rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    p {
+        max-width: 27rem;
+    }
+}
+
+#section-system {
+    --height: 51rem;
+    max-height: var(--height);
+    position: relative;
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    &>div>img {
+        width: 100%;
+        height: 100%;
+        max-height: var(--height);
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .link-img {
+        position: absolute;
+        right: 2rem;
+        bottom: 1rem;
+    }
+}
+
+#section-services {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+    a{
+        width: 32rem;
+    }
+}
