@@ -55,6 +55,10 @@
         font-size: 2rem;
     }
 
+    p {
+        font-size: 0.9rem;
+    }
+
     &>div>img {
         width: 100%;
         height: 100%;
@@ -78,7 +82,22 @@
     h3 {
         font-size: 1.5rem;
     }
-    a{
-        width: 32rem;
+
+    a {
+        min-width: 35rem;
+    }
+
+    img {
+        transition: all 300ms ease;
+    }
+
+    a:hover img {
+        transform: rotate(-55deg);
+    }
+}
+
+#section-team{
+    h2{
+        font-size: 2.5rem;
     }
 }
