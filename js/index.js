@@ -1,1 +1,1 @@
-console.log("1312");
+document.getElementById("year").innerText = new Date().getFullYear();
