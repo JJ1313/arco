@@ -20,7 +20,7 @@
 
 
 #section-intro {
-    --height: 51rem;
+    --height: 81rem;
     position: relative;
 
     h2 {
@@ -69,7 +69,7 @@
     /* } */
 
     p {
-        max-width: 30rem;
+        max-width: 40rem;
     }
 }
 
@@ -90,21 +90,23 @@
         cursor: pointer;
 
         &::before,
-        &::after{
+        &::after {
             position: absolute;
             content: '';
-            width: 15px;
-            height: 4px;
+            width: 13px;
+            height: 3px;
             background-color: var(--clr-black);
         }
-        &::before{
+
+        &::before {
             top: 50%;
-            left: -31px;
+            left: 258px;
             transform: rotate(-45deg);
         }
-        &::after{
+
+        &::after {
             top: 50%;
-            left: -40px;
+            left: 250px;
             transform: rotate(45deg);
         }
 
@@ -112,6 +114,7 @@
 
     p {
         font-size: 0.9rem;
+        line-height: 1.5rem;
     }
 
     &>div>img {
@@ -161,6 +164,62 @@
     h4 {
         font-size: 3rem;
     }
+
+    input {
+        background-color: #E5D2BF;
+        border-radius: 2.5rem;
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        font-size: 2rem;
+        margin-top: 2rem;
+        border: 1px solid black;
+        width: 100%;
+        &:focus{
+            border-color: var(--clr-orange);
+            outline: transparent;
+        }
+    }
+    form{
+        position: relative;
+    }
+    #send-email{
+        position: absolute;
+        width: 45px;
+        height: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        top: 55%;
+        left: 90%;
+        &::before, 
+        &::after{
+            content: '';
+            position: absolute;
+            background-color: var(--clr-black);
+            height: 3px;
+            transition: all ease 300ms;
+        }
+        &::before{
+            width: 40px;
+            left: -5px;
+            top: 50%;
+        }
+        &::after{
+            width: 20px;
+            top: 14%;
+            left: 16px;
+            transform: rotate(45deg);
+        }
+        &:hover::before{
+            transform: translateX(20px);
+        }
+        &:hover::after{
+            transform: translateX(20px) rotate(45deg);
+        }
+    }
 }
 
-#section-footer {}
+#section-footer {
+    li{
+        height: 2rem;
+    }
+}

@@ -69,7 +69,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: 1000;
 
     ul {
@@ -78,7 +78,7 @@ ul {
         justify-content: center;
         gap: 2rem;
         font-family: var(--font-secundary);
-        padding-block: 0.5rem;
+        padding-block: 1rem;
     }
 
     a {
@@ -90,8 +90,8 @@ ul {
         position: absolute;
         display: flex;
         gap: 1rem;
-        top: 0.5rem;
-        right: 1rem;
+        top: 1rem;
+        right: 5rem;
 
         a {
             width: 1rem;
@@ -302,6 +302,9 @@ ul {
     margin-inline-start: 0.5rem;
 }
 
+.ms-2 {
+    margin-inline-start: 2rem;
+}
 .me-2 {
     margin-inline-end: 2rem;
 }
@@ -343,6 +346,9 @@ ul {
     padding-block: 7rem;
 }
 
+.py-14 {
+    padding-block: 14rem;
+}
 ps-0p5 {
     padding-inline-start: 0.5rem;
 }
