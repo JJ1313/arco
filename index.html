@@ -12,7 +12,14 @@
 
 <body class="bg-black">
     <nav class="navbar">
-        <ul>
+        <button type="button" id="burger" data-target="menu-navbar">
+            <svg width="30" height="30" viewBox="0 0 30 30">
+                <line class="line1" x1="10" y1="6" x2="30" y2="6"></line>
+                <line class="line2" x1="10" y1="14" x2="30" y2="14"></line>
+                <line class="line3" x1="10" y1="22" x2="30" y2="22"></line>
+            </svg>
+        </button>
+        <ul id="menu-navbar">
             <li><a href="" class="font-primary">Servicios</a></li>
             <li><a href="" class="font-primary">Proyectos</a></li>
             <li><a href="" class="font-primary">Contacto</a></li>
@@ -22,11 +29,11 @@
             <a href=""><img src="img/mail.png" width="16" height="16" alt=""></a>
         </div>
     </nav>
+
     <section id="section-hero" class="flex flex-column px-0p5 px-md-9 py-2">
         <div class="mt-auto">
             <h1 class="seo-only">ARCO</h1>
             <img class="logo" src="img/logo.png" width="360" alt="ARCO">
-            <!-- <h2 class="font-400 font-secundary mt-0p5">Diseñamos. Visualizamos. Construímos.</h2> -->
         </div>
     </section>
 
@@ -102,13 +109,13 @@
             <li class="font-400 font-primary border-b border-t py-1 flex justify-center">
                 <a href="www.google.com" class="flex justify-between align-center">
                     <h3>Diseño Arquitectónico</h3>
-                    <img src="img/arrow-orange.png" class="ms-2" width="20" height="20" alt="">
+                    <img src="img/arrow-orange.png" class="ms-2 d-none d-md-block" width="20" height="20" alt="">
                 </a>
             </li>
             <li class="font-400 font-primary border-b py-1 flex justify-center">
                 <a href="www.google.com" class="flex justify-between align-center">
                     <h3>Visualización con Renders y Realidad Virtual</h3>
-                    <img src="img/arrow-orange.png" class="ms-2" width="20" height="20" alt="">
+                    <img src="img/arrow-orange.png" class="ms-2 d-none d-md-block" width="20" height="20" alt="">
                 </a>
             </li>
             <li class="font-400 font-primary border-b py-1 flex justify-center">
