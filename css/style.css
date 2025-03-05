@@ -14,7 +14,12 @@
     --font-secundary: "Inter", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
+    user-select: none;
     margin: 0;
     padding: 0;
     border: none;
@@ -183,27 +188,38 @@ ul {
 }
 
 /* ====== TEXT ====== */
-.font-3p25{
+.font-3p25 {
     font-size: 3.25rem;
 }
-.font-2p5{
+
+.font-3 {
+    font-size: 3rem;
+}
+
+.font-2p5 {
     font-size: 2.5rem;
 }
-.font-2{
+
+.font-2 {
     font-size: 2rem;
 }
-.font-1p5{
+
+.font-1p5 {
     font-size: 1.5rem;
 }
-.font-1{
+
+.font-1 {
     font-size: 1rem;
 }
-.font-0p9{
+
+.font-0p9 {
     font-size: 0.9rem;
 }
-.line-height-3{
+
+.line-height-3 {
     line-height: 3rem;
 }
+
 .color-orange {
     color: var(--clr-orange);
 }
@@ -461,8 +477,12 @@ ps-0p5 {
 pe- {
     padding-inline-end: 4rem;
 }
-.p-4{
+
+.p-4 {
     padding: 4rem;
+}
+.pt-1{
+    padding-top: 1rem;
 }
 /* ====== BORDER ====== */
 .border-y {
@@ -472,9 +492,11 @@ pe- {
 .border-x {
     border-inline: 1px solid var(--clr-black);
 }
-.border-e{
+
+.border-e {
     border-inline-end: 1px solid var(--clr-black);
 }
+
 .border-1 {
     border-width: 1px;
 }
@@ -523,6 +545,9 @@ pe- {
 
     .d-md-block {
         display: block;
+    }
+    .font-md-2{
+        font-size: 2rem;
     }
 
 }

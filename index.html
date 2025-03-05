@@ -21,9 +21,9 @@
             </svg>
         </button>
         <ul id="menu-navbar">
-            <li><a href="" class="font-primary">Servicios</a></li>
+            <li><a href="#section-services" class="font-primary">Servicios</a></li>
             <li><a href="" class="font-primary">Proyectos</a></li>
-            <li><a href="" class="font-primary">Contacto</a></li>
+            <li><a href="#section-space" class="font-primary">Contacto</a></li>
         </ul>
         <div class="right-container">
             <a href=""><img src="img/instagram.png" width="16" height="16" alt=""></a>
@@ -64,18 +64,34 @@
     <section id="section-system" class="grid columns-1 bg-white py-7">
         <div class="flex flex-column">
             <h2 class="border-b font-2p5 font-primary py-2 font-600 px-2 px-md-9 text-capitalize">Nuestro sistema</h2>
-            <div class="border-b flex flex-column justify-center flex-1 gap-1 py-2 px-2 px-md-9">
-                <h3 class="font-600 font-2 text-capitalize font-primary" data-target="p_entrevista">Entrevista</h3>
-                <p class="font-300 font-secundary text-justify " id="p_entrevista">Conocemos al cliente en profundidad,
+            <div class="border-b flex flex-column justify-center flex-1 py-2 px-2 px-md-9">
+                <div class="btn-collapsible" data-target="p_entrevista">
+                    <h3 class="font-600 font-2 text-capitalize font-primary">Entrevista
+                    </h3>
+
+                    <svg viewBox="0 0 30 20" width="25" height="15">
+                        <line class="lef" x1="0" y1="1" x2="13" y2="15"></line>
+                        <line class="rig" x1="25" y1="1" x2="11" y2="15"></line>
+                    </svg>
+                </div>
+                <p class="font-300 font-secundary text-justify" id="p_entrevista">Conocemos al cliente en profundidad,
                     exploramos su
                     visión y
                     expectativas a través de referencias detalladas, y analizamos cada aspecto de sus ideas para
                     interpretarlas de manera precisa. Nuestro objetivo es alinearnos completamente con sus necesidades,
                     garantizando que el diseño arquitectónico refleje fielmente sus aspiraciones.</p>
             </div>
-            <div class="border-b flex flex-column flex-1 justify-center gap-1 py-2 px-2 px-md-9">
-                <h3 class="font-600 font-2 text-capitalize font-primary" data-target="p_propuesta">Propuesta</h3>
-                <p class="font-300 font-secundary text-justify " id="p_propuesta">Diseñamos propuestas personalizadas
+            <div class="border-b flex flex-column flex-1 justify-center py-2 px-2 px-md-9">
+                <div class="btn-collapsible" data-target="p_propuesta">
+                    <h3 class="font-600 font-2 text-capitalize font-primary">Propuesta
+                    </h3>
+                    <svg viewBox="0 0 30 20" width="25" height="15">
+                        <line class="lef" x1="0" y1="1" x2="13" y2="15"></line>
+                        <line class="rig" x1="25" y1="1" x2="11" y2="15"></line>
+                    </svg>
+                </div>
+                <p class="font-300 font-secundary text-justify" id="p_propuesta">Diseñamos propuestas
+                    personalizadas
                     que reflejan las
                     ideas del
                     cliente, utilizando renders de
@@ -83,9 +99,16 @@
                     experimentar texturas y materiales en un entorno virtual, y visualizar cada detalle antes de la
                     construcción.</p>
             </div>
-            <div class="border-b flex flex-column justify-center flex-1 gap-1 py-2 px-2 px-md-9">
-                <h3 class="font-600 font-2 text-capitalize font-primary" data-target="p_construccion">Construcción</h3>
-                <p class="font-300 font-secundary text-justify " id="p_construccion">En ARCO Estudio, gestionamos y
+            <div class="border-b flex flex-column justify-center flex-1 py-2 px-2 px-md-9">
+                <div class="btn-collapsible" data-target="p_construccion">
+                    <h3 class="font-600 font-2 text-capitalize font-primary">Construcción
+                    </h3>
+                    <svg viewBox="0 0 30 20" width="25" height="15">
+                        <line class="lef" x1="0" y1="1" x2="13" y2="15"></line>
+                        <line class="rig" x1="25" y1="1" x2="11" y2="15"></line>
+                    </svg>
+                </div>
+                <p class="font-300 font-secundary text-justify" id="p_construccion">En ARCO Estudio, gestionamos y
                     ejecutamos proyectos
                     de construcción
                     de principio a fin. Nos
@@ -103,7 +126,7 @@
         <!-- </div> -->
     </section>
     <section id="section-services" class="py-7 bg-white">
-        <h2 class="font-600 font-2p5 font-primary px-0p5 px-md-9 mb-5">Servicios</h2>
+        <h2 class="font-600 font-2p5 font-primary px-2 px-md-9 mb-5">Servicios</h2>
         <ul class="flex flex-column justify-center">
             <li class="font-400 font-primary border-b border-t py-1 flex justify-center slide-in">
                 <a href="www.google.com" class="flex justify-between align-center text-center">
@@ -145,23 +168,29 @@
             <div class="border-e p-4">
                 <img src="img/felipe.png" alt="" width="250" height="250">
                 <h3 class="font-600 font-secundary">Felipe Arriagada</h3>
-                <p class="font-secundary text-justify">Arquitecto PUCV, Master Visualización Arquitectónica y Realidad
+                <p class="font-secundary">Arquitecto PUCV, Master Visualización Arquitectónica y Realidad
                     Virtual 24
                     Studio Madrid</p>
             </div>
             <div class="p-4">
                 <img src="img/vicente.png" alt="" width="250" height="250">
                 <h3 class="font-600 font-secundary">Vicente Roberts</h3>
-                <p class="font-secundary text-justify">Ingeniero en Construcción PUCV</p>
+                <p class="font-secundary">Ingeniero en Construcción PUCV</p>
             </div>
         </div>
     </section>
     <section id="section-space" class="py-7 bg-white">
-        <div class="px-0p5 px-md-9">
-            <h4 class="font-primary font-900">Transforma tu <br> espacio hoy.</h4>
+        <div class="px-2 px-md-9">
+            <h4 class="font-primary font-900 font-3">Transforma tu <br> espacio hoy.</h4>
             <form>
-                <input type="email" name="mail" value="" placeholder="tu-email@mail.cl">
-                <button type="submit" id="send-email"></button>
+                <input type="email" name="mail" value="" placeholder="tu-email@mail.cl" class="font-1 font-md-2">
+                <button type="submit" id="send-email" class="font-2">
+                    <svg viewBox="0 0 50 25">
+                        <line class="hor" x1="0" x2="45" y1="12" y2="12"></line>
+                        <line class="top" x1="30" x2="45" y1="0" y2="13"></line>
+                        <line class="bot" x1="30" x2="45" y1="25" y2="11"></line>
+                    </svg>
+                </button>
             </form>
 
         </div>
