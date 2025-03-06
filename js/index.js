@@ -1,5 +1,6 @@
-document.getElementById('year').innerText = new Date().getFullYear();
-
+document.querySelectorAll('.year').forEach((item) => {
+    item.innerText = new Date().getFullYear();
+})
 // ========= NAVBAR CONTROL =========
 const burger = document.getElementById('burger');
 burger.addEventListener('click', (event) => {
@@ -15,6 +16,25 @@ btnsCollapsible.forEach((btn) => btn.addEventListener('click', (event) => {
     document.getElementById(target).toggleAttribute('data-visible');
     event.target.toggleAttribute('data-active');
 }));
+
+// ========= TOP BTN =========
+const amountScroled = 200;
+const btnTop = document.getElementById('btn-top');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > amountScroled) {
+        btnTop.toggleAttribute('data-visible', true);
+    }
+    else {
+        btnTop.toggleAttribute('data-visible', false);
+    }
+    btnTop.style.visibility = 'visible';
+});
+btnTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+});
 
 // ========= ANIMATION SLIDE IN =========
 // document.addEventListener("DOMContentLoaded", function () {

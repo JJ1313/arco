@@ -148,11 +148,7 @@
         margin-bottom: 14px;
     }
 
-    h3{
-        text-align: center;
-    }
     p{
-        text-align: justify;
         margin-top: 7px;
     }
 }
@@ -174,10 +170,10 @@
     }
 }
 
-@media(min-width: 1120px) {
+@media(min-width: 1100px) {
     #section-team {
         &>div {
-            grid-template-columns: 1.5fr 1fr 1fr;
+            grid-template-columns: 1.7fr 1fr 1fr;
         }
         &>div>div:nth-child(n){
             grid-column: span 1;

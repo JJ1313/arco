@@ -74,7 +74,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     padding-block: 1rem;
     padding-inline-start: 1rem;
@@ -95,13 +95,16 @@ ul {
         }
 
         &[data-visible] {
-            height: 100px;
+            height: 180px;
         }
     }
 
     a {
-        text-transform: uppercase;
-        color: var(--clr-white);
+        transition: transform ease 500ms;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
     }
 
     #burger {
@@ -140,7 +143,6 @@ ul {
 
     .right-container {
         position: absolute;
-        display: flex;
         gap: 1rem;
         right: 2rem;
         top: 1.2rem;
@@ -152,12 +154,47 @@ ul {
     }
 }
 
+#btn-top {
+    position: fixed;
+    right: 40px;
+    bottom: 55px;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: var(--clr-white);
+    cursor: pointer;
+    scale: 0;
+    opacity: 0;
+    transition: scale ease 500ms, opacity ease 500ms;
+    visibility: hidden;
+    box-shadow: 0 0 10px 0 #00000066;
+
+    svg {
+        transition: transform ease 300ms;
+    }
+
+    &:hover svg {
+        transform: translateY(-5px);
+    }
+
+    &[data-visible] {
+        opacity: 1;
+        scale: 1;
+    }
+
+
+    line {
+        stroke-width: 3px;
+        stroke: var(--clr-black);
+        stroke-linecap: square;
+    }
+}
+
 @media(min-width: 750px) {
     .navbar {
         #menu-navbar {
             height: auto;
             justify-content: center;
-            gap: 2rem;
+            gap: 3rem;
             flex-direction: row;
         }
 
@@ -218,6 +255,10 @@ ul {
 
 .line-height-3 {
     line-height: 3rem;
+}
+
+.spacing-0p1 {
+    letter-spacing: 0.1rem;
 }
 
 .color-orange {
@@ -282,6 +323,9 @@ ul {
 
 .text-capitalize {
     text-transform: capitalize;
+}
+.text-lowercase{
+    text-transform: lowercase;
 }
 
 /* ====== BACKGROUND ====== */
@@ -462,6 +506,10 @@ ul {
     padding-block: 2rem;
 }
 
+.py-4 {
+    padding-block: 4rem;
+}
+
 .py-7 {
     padding-block: 7rem;
 }
@@ -481,9 +529,11 @@ pe- {
 .p-4 {
     padding: 4rem;
 }
-.pt-1{
+
+.pt-1 {
     padding-top: 1rem;
 }
+
 /* ====== BORDER ====== */
 .border-y {
     border-block: 1px solid var(--clr-black);
@@ -546,10 +596,20 @@ pe- {
     .d-md-block {
         display: block;
     }
-    .font-md-2{
+    .d-md-none {
+        display: none;
+    }
+
+    .d-md-flex {
+        display: flex;
+    }
+    .font-md-2 {
         font-size: 2rem;
     }
 
+    .font-md-1p5 {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 950px) {
@@ -561,6 +621,10 @@ pe- {
         grid-template-columns: 1fr 1fr;
     }
 
+    .columns-lg-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .px-lg-6 {
 
         padding-inline: 6rem;
@@ -568,5 +632,21 @@ pe- {
 
     .d-lg-block {
         display: block;
+    }
+
+    .d-lg-none {
+        display: none;
+    }
+
+    .text-lg-start {
+        text-align: start;
+    }
+
+    .justify-lg-start {
+        justify-content: start;
+    }
+
+    .mt-lg-0 {
+        margin-top: 0rem;
     }
 }
