@@ -15,7 +15,6 @@
 
 #section-intro {
     --height: 81rem;
-    position: relative;
 
 
     /* .img-container { */
@@ -142,13 +141,14 @@
     &>div {
         grid-template-columns: 1fr;
     }
-    img{
+
+    img {
         display: block;
         margin-inline: auto;
         margin-bottom: 14px;
     }
 
-    p{
+    p {
         margin-top: 7px;
     }
 }
@@ -175,7 +175,8 @@
         &>div {
             grid-template-columns: 1.7fr 1fr 1fr;
         }
-        &>div>div:nth-child(n){
+
+        &>div>div:nth-child(n) {
             grid-column: span 1;
         }
     }
@@ -183,7 +184,8 @@
 
 #section-space {
 
-    input {
+    input,
+    textarea {
         background-color: #E5D2BF;
         border-radius: 2.5rem;
         padding-inline: 2rem;
@@ -198,42 +200,43 @@
         }
     }
 
-    form {
-        position: relative;
+    textarea {
+        resize: vertical;
     }
-
+    .img-container{
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
     #send-email {
-        position: absolute;
-        width: 50px;
-        height: 25px;
         cursor: pointer;
         background-color: transparent;
-        top: 55%;
-        left: 80%;
+        max-width: 20rem;
+        border: 2px solid var(--clr-black);
+        color: var(--clr-black);
+        height: 50px;
+        border-radius: 25px;
+        padding: 1rem;
+        transition: all ease 500ms;
 
-        svg {
-            transition: all ease 500ms;
-            display: block;
-        }
-
-        line {
-            stroke-width: 3;
-            stroke-linecap: butt;
-            stroke: var(--clr-black);
-        }
-
-        &:hover svg {
-            transform: translateX(25%);
+        &:hover,
+        &:focus{
+            color: var(--clr-orange);
+            border-color: var(--clr-orange);
+            outline: transparent;
         }
     }
 }
+
 @media(min-width: 600px) {
     #section-space {
-        #send-email{
+        #send-email {
             left: 90%;
         }
     }
 }
+
 #section-footer {
     li {
         height: 2rem;

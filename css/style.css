@@ -100,10 +100,12 @@ ul {
     }
 
     a {
-        transition: transform ease 500ms;
+        transition: all ease 500ms;
+        color: var(--clr-white);
 
         &:hover {
-            transform: translateY(-5px);
+            transform: translateY(-2px);
+            color: var(--clr-orange);
         }
     }
 
@@ -418,6 +420,9 @@ ul {
 .justify-end {
     justify-content: end;
 }
+.justify-start {
+    justify-content: end;
+}
 
 .align-center {
     align-items: center;
@@ -469,10 +474,13 @@ ul {
     margin-inline-start: 2rem;
 }
 
+.me-1 {
+    margin-inline-end: 1rem;
+}
+
 .me-2 {
     margin-inline-end: 2rem;
 }
-
 .mx-auto {
     margin-inline: auto;
 }
